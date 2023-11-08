@@ -5,18 +5,9 @@ import { useState } from 'react'
 import Header from './Components/Header'
 import Input from './Components/Input'
 import Button from './Components/Button'
+import Result from "./Components/Result"
 
 import './index.css'
-
-const Resultado = styled.p`
-  width: 92%;
-  padding: 0 20px;
-  color: #eee;
-  font-family: DsDigital;
-  font-size: 50px;
-  border-radius: 8px;
-  background-color: #555;
-`
 
 const App = () => {
   const [number1, setNumber1] = useState('')
@@ -61,7 +52,7 @@ const App = () => {
     <>
       <Header />
       <div className="container">
-        <Resultado>{calc}</Resultado>
+        <Result>{calc}</Result>
         <div className="container-inputs">
           <Input
             value={number1}
