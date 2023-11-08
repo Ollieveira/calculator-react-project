@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+src/assets/react.svg
+src/App.css
+public/vite.svg
