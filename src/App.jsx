@@ -1,11 +1,10 @@
 import React from 'react'
-import { styled } from 'styled-components'
 import { useState } from 'react'
 
 import Header from './Components/Header'
 import Input from './Components/Input'
 import Button from './Components/Button'
-import Result from "./Components/Result"
+import Result from './Components/Result'
 
 import './index.css'
 
@@ -39,13 +38,13 @@ const App = () => {
     setTimeout(() => {
       setNumber1('')
       setNumber2('')
-    }, 5000)
-
-    console.log(calc)
+    }, 3000)
   }
 
   const clearResult = () => {
     setCalc(0)
+    setNumber1('')
+    setNumber2('')
   }
 
   return (
