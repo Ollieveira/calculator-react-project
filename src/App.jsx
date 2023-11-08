@@ -4,6 +4,7 @@ import { useState } from 'react'
 
 import Header from './Components/Header'
 import Input from './Components/Input'
+import Button from './Components/Button'
 
 import './index.css'
 
@@ -15,23 +16,6 @@ const Resultado = styled.p`
   font-size: 50px;
   border-radius: 8px;
   background-color: #555;
-`
-
-const Button = styled.button`
-  height: 40px;
-  width: 100px;
-  border-radius: 8px;
-  border: none;
-  background-color: #555;
-  color: #eee;
-  font-size: 20px;
-  font-weight: bold;
-
-  &:hover {
-    cursor: pointer;
-    border: solid 2px #ff9f0a;
-    background-color: #ff9f0a;
-  }
 `
 
 const App = () => {
@@ -64,7 +48,7 @@ const App = () => {
     setTimeout(() => {
       setNumber1('')
       setNumber2('')
-    }, 3000)
+    }, 5000)
 
     console.log(calc)
   }
