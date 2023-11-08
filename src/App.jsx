@@ -1,14 +1,10 @@
-import React, { useEffect } from "react"
-import { styled} from "styled-components"
+import React from "react"
+import { styled } from "styled-components"
 import { useState } from "react"
 
-import "./index.css"
+import Header from "./Components/Header"
 
-const Title = styled.h1`
-  text-align: center;
-  color: #eee; 
-  margin-bottom: 20px; 
-`
+import "./index.css"
 
 const Resultado = styled.p`
   width: 92%;
@@ -110,7 +106,7 @@ const App = () => {
         
   return (   
       <>    
-        <Title>Calculadora Vai na Web</Title>  
+        <Header />  
         <div className="container">
           <Resultado>{calc}</Resultado>
           <div className="container-inputs">
